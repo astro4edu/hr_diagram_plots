@@ -1,0 +1,249 @@
+<?xml version='1.0'?>
+<VOTABLE version="1.4"
+ xmlns="http://www.ivoa.net/xml/VOTable/v1.3">
+<!--
+ !  VOTable written by STIL version 4.2 (uk.ac.starlink.votable.VOTableWriter)
+ !  at 2024-08-02T19:51:33
+ !-->
+<RESOURCE>
+<TABLE name="/Users/deacon/Documents/GitHub/hr_diagrams/data/named_stars.csv" nrows="14">
+<FIELD arraysize="*" datatype="char" name="english_name"/>
+<FIELD datatype="short" name="translation_index"/>
+<FIELD datatype="short" name="literature_effective_temperature"/>
+<FIELD arraysize="*" datatype="char" name="literature_effective_temperature_reference"/>
+<FIELD datatype="double" name="literature_luminosity"/>
+<FIELD arraysize="*" datatype="char" name="literature_luminosity_reference"/>
+<FIELD datatype="float" name="literature_radius"/>
+<FIELD arraysize="*" datatype="char" name="literature_radius_reference"/>
+<FIELD datatype="double" name="fallback_radius">
+<DESCRIPTION>Expression: $18</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="radius_used">
+<DESCRIPTION>Expression: abs(max(literature_radius,-1.0*fallback_radius))</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="literature_logg">
+<DESCRIPTION>Expression: -99.9</DESCRIPTION>
+</FIELD>
+<FIELD arraysize="*" datatype="char" name="literature_logg_reference">
+<DESCRIPTION>Expression: ""</DESCRIPTION>
+</FIELD>
+<FIELD datatype="double" name="text_offset_x">
+<DESCRIPTION>Expression: 1.02</DESCRIPTION>
+</FIELD>
+<DATA>
+<TABLEDATA>
+  <TR>
+    <TD>Sun</TD>
+    <TD>0</TD>
+    <TD>5778</TD>
+    <TD></TD>
+    <TD>1.0</TD>
+    <TD></TD>
+    <TD>1.0</TD>
+    <TD></TD>
+    <TD>1.0</TD>
+    <TD>1.0</TD>
+    <TD>4.437750562820388</TD>
+    <TD>https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html</TD>
+    <TD>1.02</TD>
+  </TR>
+  <TR>
+    <TD>Alshain</TD>
+    <TD>0</TD>
+    <TD>5030</TD>
+    <TD>2010MNRAS.405.1907B,</TD>
+    <TD>6.23</TD>
+    <TD>2010MNRAS.405.1907B,</TD>
+    <TD>1.499</TD>
+    <TD>2010MNRAS.405.1907B,</TD>
+    <TD>3.293541409982092</TD>
+    <TD>1.4989999532699585</TD>
+    <TD>3.525</TD>
+    <TD>2010MNRAS.405.1907B,</TD>
+    <TD>0.98</TD>
+  </TR>
+  <TR>
+    <TD>Procyon B</TD>
+    <TD>0</TD>
+    <TD>7740</TD>
+    <TD>2002ApJ...568..324P</TD>
+    <TD>4.9E-4</TD>
+    <TD>2002ApJ...568..324P</TD>
+    <TD>0.012</TD>
+    <TD>2012ApJS..199...29G</TD>
+    <TD>0.012335910041481178</TD>
+    <TD>0.012000000104308128</TD>
+    <TD>8.0</TD>
+    <TD>2012ApJS..199...29G</TD>
+    <TD>0.98</TD>
+  </TR>
+  <TR>
+    <TD>Achernar</TD>
+    <TD>0</TD>
+    <TD>15000</TD>
+    <TD>2014A&amp;A...569A..10D</TD>
+    <TD>3250.0</TD>
+    <TD>2022A&amp;A...667A.111K</TD>
+    <TD>9.15</TD>
+    <TD>2014A&amp;A...569A..10D</TD>
+    <TD>8.4589067503901</TD>
+    <TD>9.149999618530273</TD>
+    <TD>3.166</TD>
+    <TD>2014A&amp;A...569A..10D</TD>
+    <TD>0.97</TD>
+  </TR>
+  <TR>
+    <TD>Mintaka</TD>
+    <TD>0</TD>
+    <TD>29500</TD>
+    <TD>2015ApJ...809..135S</TD>
+    <TD>190000.0</TD>
+    <TD>2015ApJ...809..135S</TD>
+    <TD>16.5</TD>
+    <TD>2015ApJ...809..135S</TD>
+    <TD>16.721985539489264</TD>
+    <TD>16.5</TD>
+    <TD>3.37</TD>
+    <TD>2015ApJ...809..135S</TD>
+    <TD>0.97</TD>
+  </TR>
+  <TR>
+    <TD>Betelguese</TD>
+    <TD>0</TD>
+    <TD>3600</TD>
+    <TD>2020ApJ...902...63J</TD>
+    <TD>87110.0</TD>
+    <TD>2020ApJ...902...63J.</TD>
+    <TD>1021.0</TD>
+    <TD>2023A%26A...669A...9M</TD>
+    <TD>760.298406668358</TD>
+    <TD>1021.0</TD>
+    <TD>-0.5</TD>
+    <TD>2000ApJ...545..454L.</TD>
+    <TD>0.9</TD>
+  </TR>
+  <TR>
+    <TD>Rigel</TD>
+    <TD>0</TD>
+    <TD>12100</TD>
+    <TD>2010A&amp;A...517A..38P</TD>
+    <TD>120000.0</TD>
+    <TD>2012ApJ...747..108M</TD>
+    <TD>78.9</TD>
+    <TD>2012ApJ...747..108M</TD>
+    <TD>78.99051719570565</TD>
+    <TD>78.9000015258789</TD>
+    <TD>1.75</TD>
+    <TD>2012ApJ...747..108M</TD>
+    <TD>0.95</TD>
+  </TR>
+  <TR>
+    <TD>Arcturus</TD>
+    <TD>0</TD>
+    <TD>4286</TD>
+    <TD>2011ApJ...743..135R</TD>
+    <TD>170.0</TD>
+    <TD>2007A&amp;A...465..593S</TD>
+    <TD>25.4</TD>
+    <TD>2011ApJ...743..135R</TD>
+    <TD>23.696008790862294</TD>
+    <TD>25.399999618530273</TD>
+    <TD>1.66</TD>
+    <TD>2011ApJ...743..135R</TD>
+    <TD>0.96</TD>
+  </TR>
+  <TR>
+    <TD>Canopus</TD>
+    <TD>0</TD>
+    <TD>7400</TD>
+    <TD>2018ApJ...854...95A</TD>
+    <TD>10700.0</TD>
+    <TD>2013MNRAS.434..437C</TD>
+    <TD>73.3</TD>
+    <TD>2021A&amp;A...654A..19D</TD>
+    <TD>63.06429199552416</TD>
+    <TD>73.30000305175781</TD>
+    <TD>1.7</TD>
+    <TD>:2021A&amp;A...654A..19D</TD>
+    <TD>1.05</TD>
+  </TR>
+  <TR>
+    <TD>Sirius A</TD>
+    <TD>0</TD>
+    <TD>9940</TD>
+    <TD>2004IAUS..224....1A</TD>
+    <TD>25.4</TD>
+    <TD>2005ApJ...630L..69L</TD>
+    <TD>1.711</TD>
+    <TD>2005ApJ...630L..69L</TD>
+    <TD>1.7029392858673293</TD>
+    <TD>1.7109999656677246</TD>
+    <TD>4.33</TD>
+    <TD>2005ApJ...630L..69L</TD>
+    <TD>1.03</TD>
+  </TR>
+  <TR>
+    <TD>Sirius B</TD>
+    <TD>0</TD>
+    <TD>25000</TD>
+    <TD>2005ApJ...630L..69L.</TD>
+    <TD>0.056</TD>
+    <TD>1976A&amp;A....49..375S</TD>
+    <TD>0.0084</TD>
+    <TD>1998ApJ...497..935H</TD>
+    <TD>0.012640640238428104</TD>
+    <TD>0.00839999970048666</TD>
+    <TD>8.57</TD>
+    <TD>1998ApJ...497..935H</TD>
+    <TD>0.98</TD>
+  </TR>
+  <TR>
+    <TD>Proxima Centauri</TD>
+    <TD>0</TD>
+    <TD>2992</TD>
+    <TD>2021ApJ...918...40P.</TD>
+    <TD>0.001567</TD>
+    <TD>2021ApJ...918...40P.</TD>
+    <TD>0.1542</TD>
+    <TD>2017A&amp;A...598L...7K</TD>
+    <TD>0.14762720413507607</TD>
+    <TD>0.1542000025510788</TD>
+    <TD>5.2</TD>
+    <TD>2003A&amp;A...397L...5S</TD>
+    <TD>1.02</TD>
+  </TR>
+  <TR>
+    <TD>Teide 1</TD>
+    <TD>0</TD>
+    <TD>2600</TD>
+    <TD>1996ApJ...469L..53R</TD>
+    <TD>6.6E-4</TD>
+    <TD>1996ApJ...469L..53R</TD>
+    <TD>NaN</TD>
+    <TD></TD>
+    <TD>0.12687625375289574</TD>
+    <TD>0.12687625375289574</TD>
+    <TD>NaN</TD>
+    <TD></TD>
+    <TD>0.98</TD>
+  </TR>
+  <TR>
+    <TD>Kelu-1 A</TD>
+    <TD>0</TD>
+    <TD>2020</TD>
+    <TD>2005ApJ...634..616L</TD>
+    <TD>1.55E-4</TD>
+    <TD>2005ApJ...634..616L</TD>
+    <TD>NaN</TD>
+    <TD></TD>
+    <TD>0.1018634040413537</TD>
+    <TD>0.1018634040413537</TD>
+    <TD>NaN</TD>
+    <TD></TD>
+    <TD>1.02</TD>
+  </TR>
+</TABLEDATA>
+</DATA>
+</TABLE>
+</RESOURCE>
+</VOTABLE>
