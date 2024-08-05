@@ -1,6 +1,5 @@
 ## What this repository does	
-This repository makes some plots. 
-
+Most data from this plot comes from the [ESA Gaia mission][https://sci.esa.int/web/gaia]. The majority of stars plotted here come from three samples, one selecting Gaia stars within 8pc, one selecting Gaia stars with parallax<10(G-5). Where ESA Gaia does not quote a luminosity, we use a luminosity calculated from the estimated radius and temperature of the star. For named stars the luminosity, temperature and radius estimates are taken from the literature. See the named stars table in the data folder for references. To include a wide range of spectra types we use Gaia data for some stars in the [Pickles (1998)][https://ui.adsabs.harvard.edu/abs/1998PASP..110..863P/abstract] spectral library. Our white dwarfs and their luminosities come from [Vincent et al. (2024)][https://ui.adsabs.harvard.edu/abs/2024A%26A...682A...5V/abstract]. In all cases we The colours are generated using the relationships in [Harre & Heller (2021)][https://onlinelibrary.wiley.com/doi/10.1002/asna.202113868]. For most objects we use the T_eff + log g grid (table 2 in Harre & Heller), for stars hotter than 10,000K we use the temperature/spectral type relationship (table 5) and white dwarfs we use the effective temperature relationship for blackbodies (table 1).
 ## How to create plots using this repository
 The command to run code from this repository is:
 `python3 hr_diagram_plot.py`
