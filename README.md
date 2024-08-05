@@ -3,7 +3,7 @@ This repository makes some plots.
 
 ## How to create plots using this repository
 The command to run code from this repository is:
-`python3 example_plotter.py`
+`python3 hr_diagram_plot.py`
 The following command line options are available:
 ```-h, --help            show this help message and exit
   --lang LANG           add language code
@@ -18,7 +18,7 @@ The following command line options are available:
                         English. Default is False
 ```
 Example usage, for English, using untranslated filenames, the default translation file, pdf output format and output directory "/home/user/plots/", one would use the command:
-```python3 example_plotter.py --lang=en --output_format=pdf --plot_dir=/home/user/plots/ ```
+```python3 hr_diagram_plot.py --lang=en --output_format=pdf --plot_dir=/home/user/plots/ ```
 The code creates an example plot.
 
 ## License
@@ -66,7 +66,7 @@ And instead have:
 ```
 
 Then just run:
-```python3 example_plotter.py --lang=zz```
+```python3 hr_diagram_plot.py --lang=zz```
 With `zz` replaced by your language code.
 
 <!-- start-diagram-links -->
