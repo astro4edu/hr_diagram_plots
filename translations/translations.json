@@ -1,0 +1,37 @@
+{
+    "en":{
+	"translation_approval_level": "N",
+	"translation_credit": null,
+	"matplotlib_cairo": false,
+	"possible_fonts": [
+	    "Noto Sans",
+	    "Arial"
+	],
+	"title_text": "Hertzsprung–Russell Diagram",
+	"xaxis_text": "Effective Temperature (K)",
+	"yaxis_text": "Luminosity (solar luminosities)",
+	"rad_text":"Radius (solar radii)",
+	"sun-name":"Sun",
+	"alshain-name":"Alshain",
+	"procyon-b-name":"Procyon B",
+	"achernar-name":"Achernar",
+	"mintaka-name":"Mintaka",
+	"betelguese-name":"Betelguese",
+	"rigel-name":"Rigel",
+	"arcturus-name":"Arcturus",
+	"canopus-name":"Canopus",
+	"sirius-a-name":"Sirius A",
+	"sirius-b-name":"Sirius B",
+	"proxima-centauri-name":"Proxima Centauri",
+	"teide-1-name":"Teide 1",
+	"kelu-1-a-name":"Kelu-1 A",
+	"wd_text":"White Dwarfs",
+	"ms_text":"Main Sequence",
+	"sbg_text":"Subgiants",
+	"g_text":"Giants",
+	"bg_text":"Bright Giants",
+	"spg_text":"Supergiants",
+	"bd_text":"Brown Dwarfs",
+	"filename":"hr_diagram"
+    }
+}
