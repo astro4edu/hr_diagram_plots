@@ -158,36 +158,36 @@ text_list_en=translations_dicts['en']
 
 
 #load in input data from the various input files
-pickles_data = Table.read("data/pickles1998.vot")
+pickles_data = Table.read(Path(__file__).parent / "./data/pickles1998.vot")
 filtered_data1=pickles_data['teff_gspphot','luminosity','radius_gspphot','logg_gspphot']
 filtered_data1['teff_gspphot'].name = 'teff'
 filtered_data1['radius_gspphot'].name = 'radius'
 filtered_data1['logg_gspphot'].name = 'logg'
-bright_nearby_data = Table.read("data/bright_nearby_stars_sample.vot")
+bright_nearby_data = Table.read(Path(__file__).parent / "./data/bright_nearby_stars_sample.vot")
 filtered_data2=bright_nearby_data['teff_gspphot','luminosity','radius_gspphot','logg_gspphot']
 filtered_data2['teff_gspphot'].name = 'teff'
 filtered_data2['radius_gspphot'].name = 'radius'
 filtered_data2['logg_gspphot'].name = 'logg'
 
-nearby_data = Table.read("data/nearby_stars_sample.vot")
+nearby_data = Table.read(Path(__file__).parent / "./data/nearby_stars_sample.vot")
 filtered_data3=nearby_data['teff_gspphot','luminosity','radius_gspphot','logg_gspphot']
 filtered_data3['teff_gspphot'].name = 'teff'
 filtered_data3['radius_gspphot'].name = 'radius'
 filtered_data3['logg_gspphot'].name = 'logg'
 
-wd_data = Table.read("data/vincent2024_nearby_white_dwarfs.vot")
+wd_data = Table.read(Path(__file__).parent / "./data/vincent2024_nearby_white_dwarfs.vot")
 wd_data['radius']=10.0**wd_data['logR']
 wd_data['luminosity']=10.0**wd_data['logL']
 filtered_data4=wd_data['teff','luminosity','radius','logg']
 filtered_data=vstack([filtered_data1,filtered_data2,filtered_data3,filtered_data4],metadata_conflicts='silent')
 
 #load named star data
-named_stars_data=Table.read("data/named_stars.vot")
+named_stars_data=Table.read(Path(__file__).parent / "./data/named_stars.vot")
 
 #read in colour data from Harre & Heller tables
-harre_heller_2021_t1_data = Table.read("data/harre_heller_2021_t1.csv")
-harre_heller_2021_t2_data = Table.read("data/harre_heller_2021_t2.csv")
-harre_heller_2021_t5_data = Table.read("data/harre_heller_2021_t5.csv")
+harre_heller_2021_t1_data = Table.read(Path(__file__).parent / "./data/harre_heller_2021_t1.csv")
+harre_heller_2021_t2_data = Table.read(Path(__file__).parent / "./data/harre_heller_2021_t2.csv")
+harre_heller_2021_t5_data = Table.read(Path(__file__).parent / "./data/harre_heller_2021_t5.csv")
 teff_values=sorted(list(set(harre_heller_2021_t2_data['T_eff'])))
 logg_values=sorted(list(set(harre_heller_2021_t2_data['logg'])))
 colours_tmp=[]
