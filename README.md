@@ -1,5 +1,5 @@
 ## What this repository does	
-
+This plot makes a Hertzsprung-Russell diagram that shows the main luminosity classes as well as radius and colour for each object.
 
 ## Where does the data come from?
 Most data from this plot comes from the [ESA Gaia mission][https://sci.esa.int/web/gaia]. The majority of stars plotted here come from three samples:
@@ -11,11 +11,10 @@ Most data from this plot comes from the [ESA Gaia mission][https://sci.esa.int/w
 - A selection of named stars selected by hand to add named stars across the different temperatures and luminosity classes
 For named stars the luminosity, temperature and radius estimates are taken from the literature. See the named stars table in the data folder for references.  Our
 These samples were chosen to provide objects across the HR diagram and do not provide a representative sample of stars in the Galaxy.
--
+
 In the first three samples the selected stars had parallaxes ten times greater than their parallax uncertainties, had Gaia G magnitudes brighter than 18, were not flagged as non-single stars and had Renormalised Unit Weight Error (RUWE) less than 1.4 as recommended by [Lindegren et al. (2018)][https://www.cosmos.esa.int/documents/29201/1770596/Lindegren_GaiaDR2_Astrometry_extended.pdf/1ebddb25-f010-6437-cb14-0e360e2d9f09]. 
 
-In the first three samples the selected stars 
-For the white dwarfs the temperatures, 
+In the first three samples the selected stars we used data from the Gaia DR3 astrophysical parameters table. We used effective temperatures and radius estimates in this table derived from Gaia photometry and where available the luminosity from the FLAME pipeline. Where this was not available we estimated the luminosity from the effective temperature and radius estimates. For the white dwarfs we used the parameters from Vincent et al. (2024). For the named stars we used luminosities, radii and temperatures from a range of source (see the data table for named stars for more details).
 
 The colours for our objects are generated using the relationships in [Harre & Heller (2021)][https://onlinelibrary.wiley.com/doi/10.1002/asna.202113868]. For most objects we use the T_eff + log g grid (table 2 in Harre & Heller), for stars hotter than 10,000K we use the temperature/spectral type relationship (table 5) and white dwarfs we use the effective temperature relationship for blackbodies (table 1).
 ## How to create plots using this repository
@@ -39,10 +38,10 @@ Example usage, for English, using untranslated filenames, the default translatio
 The code creates an example plot.
 
 ## License
-The code released is available under an MIT license and should be credited to IAU OAE/Niall Deacon. The plots in the plots directory and the translations in the translations directory are published under a <a href="https://creativecommons.org/licenses/by/4.0/deed.en">CC-BY-4.0 license</a>.
+The code released is available under an MIT license and should be credited to IAU OAE/Niall Deacon. The plots in the plots directory and the translations in the translations directory are published under a <a href="https://creativecommons.org/licenses/by/4.0/deed.en">CC-BY-4.0 license</a>. For the data included in the data folder please cite the source paper and/or Gaia. 
 
 ## Plot Credits
-Please credit all plots created by this code to IAU OAE/AUTHOR NAME. For languages other than English, please also credit the translators listed below. 
+Please credit all plots created by this code to IAU OAE/Niall Deacon. For languages other than English, please also credit the translators listed below. 
 <!-- start-translation-credits -->
 
 ## Translation credits
