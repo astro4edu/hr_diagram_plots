@@ -6,7 +6,7 @@ Most data from this plot comes from the [ESA Gaia mission](https://sci.esa.int/w
 
 - One selecting Gaia stars within 8pc
 - One selecting 2.5% of the Gaia stars with parallax<10(G-5). Where ESA Gaia does not quote a luminosity, we use a luminosity calculated from the estimated radius and temperature of the star.
-- A subsample of stars from the Pickles (1998)](https://ui.adsabs.harvard.edu/abs/1998PASP..110..863P/abstract) spectral library. This was added to include a wider range of spectra types
+- A subsample of stars from the [Pickles (1998)](https://ui.adsabs.harvard.edu/abs/1998PASP..110..863P/abstract) spectral library. This was added to include a wider range of spectra types
 - White dwarfs within 12pc from [Vincent et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024A%26A...682A...5V/abstract). 
 - A selection of named stars selected by hand to add named stars across the different temperatures and luminosity classes
 For named stars the luminosity, temperature and radius estimates are taken from the literature. See the named stars table in the data folder for references.  Our
