@@ -3,36 +3,44 @@
  xmlns="http://www.ivoa.net/xml/VOTable/v1.3">
 <!--
  !  VOTable written by STIL version 4.2 (uk.ac.starlink.votable.VOTableWriter)
- !  at 2024-03-16T20:48:20
+ !  at 2024-08-05T14:39:35
  !-->
 <RESOURCE>
 <RESOURCE>
-  <COOSYS ID="t37-coosys-1" epoch="J2016.0" system="ICRS"/>
+  <COOSYS ID="t3-coosys-1" epoch="J2016.0" system="ICRS"/>
 </RESOURCE>
-<TABLE name="1710614441619O-result.vot" nrows="83">
+<TABLE name="pickles%2520crossmatch-result(2).vot.gz" nrows="51">
 <PARAM arraysize="2" datatype="char" name="QUERY_STATUS" value="OK"/>
-<PARAM arraysize="788" datatype="char" name="QUERY" value="SELECT *,gs.source_id, gs.ra,gs.dec,gs.phot_g_mean_mag,gs.phot_bp_mean_mag,gs.phot_rp_mean_mag,gs.phot_bp_mean_flux_over_error,gs.phot_rp_mean_flux_over_error, gs.parallax,gs.parallax_error, ap.teff_gspphot, ap.teff_gspphot_lower, ap.teff_gspphot_upper, ap.logg_gspphot, ap.logg_gspphot_lower, ap.logg_gspphot_upper, ap.radius_gspphot, ap.radius_gspphot_lower, ap.radius_gspphot_upper,ap.lum_flame,ap.lum_flame_lower,ap.lum_flame_upper,gs.in_qso_candidates,gs.in_galaxy_candidates,gs.non_single_star FROM user_ndeaco01.xmatch_pickles98_gaia_source as xpg JOIN user_ndeaco01.pickles98  AS p98 ON p98.pickles98_oid=xpg.pickles98_pickles98_oid JOIN gaiadr3.gaia_source AS gs ON gs.source_id=xpg.gaia_source_source_id JOIN gaiadr3.astrophysical_parameters AS ap ON gs.source_id=ap.source_id  ">
-<DESCRIPTION>SELECT *,gs.source_id, gs.ra,gs.dec,gs.phot_g_mean_mag,gs.phot_bp_mean_mag,gs.phot_rp_mean_mag,gs.phot_bp_mean_flux_over_error,gs.phot_rp_mean_flux_over_error, gs.parallax,gs.parallax_error, ap.teff_gspphot, ap.teff_gspphot_lower, ap.teff_gspphot_upper, ap.logg_gspphot, ap.logg_gspphot_lower, ap.logg_gspphot_upper, ap.radius_gspphot, ap.radius_gspphot_lower, ap.radius_gspphot_upper,ap.lum_flame,ap.lum_flame_lower,ap.lum_flame_upper,gs.in_qso_candidates,gs.in_galaxy_candidates,gs.non_single_star
+<PARAM arraysize="897" datatype="char" name="QUERY" value="SELECT gs.source_id, gs.ra, gs.dec,gs.phot_g_mean_mag,gs.phot_bp_mean_mag,gs.phot_rp_mean_mag,gs.phot_bp_mean_flux_over_error,gs.phot_rp_mean_flux_over_error, gs.parallax,gs.parallax_error, ap.teff_gspphot, ap.teff_gspphot_lower, ap.teff_gspphot_upper, ap.logg_gspphot, ap.logg_gspphot_lower, ap.logg_gspphot_upper, ap.radius_gspphot, ap.radius_gspphot_lower, ap.radius_gspphot_upper,ap.lum_flame,ap.lum_flame_lower,ap.lum_flame_upper,gs.in_qso_candidates,gs.in_galaxy_candidates,gs.non_single_star  FROM user_ndeaco01.xmatch_pickles98_gaia_source as xpg JOIN user_ndeaco01.pickles98  AS p98 ON p98.pickles98_oid=xpg.pickles98_pickles98_oid JOIN gaiadr3.gaia_source AS gs ON gs.source_id=xpg.gaia_source_source_id JOIN gaiadr3.astrophysical_parameters AS ap ON gs.source_id=ap.source_id WHERE gs.phot_g_mean_mag&lt;18 AND gs.non_single_star=0 AND gs.ruwe&lt;1.4 AND gs.parallax&gt;10.0*gs.parallax_error;  ">
+<DESCRIPTION>SELECT gs.source_id, gs.ra, gs.dec,gs.phot_g_mean_mag,gs.phot_bp_mean_mag,gs.phot_rp_mean_mag,gs.phot_bp_mean_flux_over_error,gs.phot_rp_mean_flux_over_error, gs.parallax,gs.parallax_error, ap.teff_gspphot, ap.teff_gspphot_lower, ap.teff_gspphot_upper, ap.logg_gspphot, ap.logg_gspphot_lower, ap.logg_gspphot_upper, ap.radius_gspphot, ap.radius_gspphot_lower, ap.radius_gspphot_upper,ap.lum_flame,ap.lum_flame_lower,ap.lum_flame_upper,gs.in_qso_candidates,gs.in_galaxy_candidates,gs.non_single_star
+
 FROM user_ndeaco01.xmatch_pickles98_gaia_source as xpg
 JOIN user_ndeaco01.pickles98  AS p98 ON p98.pickles98_oid=xpg.pickles98_pickles98_oid
 JOIN gaiadr3.gaia_source AS gs ON gs.source_id=xpg.gaia_source_source_id
-JOIN gaiadr3.astrophysical_parameters AS ap ON gs.source_id=ap.source_id</DESCRIPTION>
+JOIN gaiadr3.astrophysical_parameters AS ap ON gs.source_id=ap.source_id
+WHERE gs.phot_g_mean_mag&lt;18
+AND gs.non_single_star=0
+AND gs.ruwe&lt;1.4
+AND gs.parallax&gt;10.0*gs.parallax_error;</DESCRIPTION>
 </PARAM>
 <PARAM arraysize="*" datatype="char" name="CAPTION" value=""/>
 <PARAM arraysize="*" datatype="char" name="CITATION" value=""/>
 <PARAM arraysize="*" datatype="char" name="PAGE" value=""/>
 <PARAM arraysize="*" datatype="char" name="PAGE_SIZE" value=""/>
-<PARAM arraysize="14" datatype="char" name="JOBID" value="1710614441619O">
-<DESCRIPTION>1710614441619O</DESCRIPTION>
+<PARAM arraysize="14" datatype="char" name="JOBID" value="1722868675410O">
+<DESCRIPTION>1722868675410O</DESCRIPTION>
 </PARAM>
-<PARAM arraysize="*" datatype="char" name="JOBNAME" value=""/>
-<FIELD datatype="long" name="source_id" ucd="meta.id">
+<PARAM arraysize="18" datatype="char" name="JOBNAME" value="pickles crossmatch">
+<DESCRIPTION>pickles crossmatch</DESCRIPTION>
+</PARAM>
+<PARAM ID="GaiaRelease" arraysize="8" datatype="char" name="RELEASE" value="Gaia DR3"/>
+<FIELD ID="SOURCE_ID" datatype="long" name="source_id" ucd="meta.id">
 <DESCRIPTION>Unique source identifier (unique within a particular Data Release)</DESCRIPTION>
 </FIELD>
-<FIELD datatype="double" name="ra" ref="t37-coosys-1" ucd="pos.eq.ra;meta.main" unit="deg" utype="stc:AstroCoords.Position3D.Value3.C1">
+<FIELD datatype="double" name="ra" ref="t3-coosys-1" ucd="pos.eq.ra;meta.main" unit="deg" utype="stc:AstroCoords.Position3D.Value3.C1">
 <DESCRIPTION>Right ascension</DESCRIPTION>
 </FIELD>
-<FIELD datatype="double" name="dec" ref="t37-coosys-1" ucd="pos.eq.dec;meta.main" unit="deg" utype="stc:AstroCoords.Position3D.Value3.C2">
+<FIELD datatype="double" name="dec" ref="t3-coosys-1" ucd="pos.eq.dec;meta.main" unit="deg" utype="stc:AstroCoords.Position3D.Value3.C2">
 <DESCRIPTION>Declination</DESCRIPTION>
 </FIELD>
 <FIELD datatype="float" name="phot_g_mean_mag" ucd="phot.mag;em.opt" unit="mag">
@@ -168,6 +176,64 @@ JOIN gaiadr3.astrophysical_parameters AS ap ON gs.source_id=ap.source_id</DESCRI
     <TD>0</TD>
   </TR>
   <TR>
+    <TD>5350383460949215232</TD>
+    <TD>161.18755218207215</TD>
+    <TD>-59.56517546750966</TD>
+    <TD>7.2764897</TD>
+    <TD>7.3775487</TD>
+    <TD>7.0214057</TD>
+    <TD>951.2477</TD>
+    <TD>1322.0046</TD>
+    <TD>0.41147650169044275</TD>
+    <TD>0.019890357</TD>
+    <TD>15265.886</TD>
+    <TD>15229.858</TD>
+    <TD>15296.204</TD>
+    <TD>2.7757</TD>
+    <TD>2.7714</TD>
+    <TD>2.779</TD>
+    <TD>22.4681</TD>
+    <TD>22.3836</TD>
+    <TD>22.5778</TD>
+    <TD>NaN</TD>
+    <TD>NaN</TD>
+    <TD>NaN</TD>
+    <TD>24598.609651818162</TD>
+    <TD>24598.609651818162</TD>
+    <TD>T</TD>
+    <TD>F</TD>
+    <TD>0</TD>
+  </TR>
+  <TR>
+    <TD>5350350303799853056</TD>
+    <TD>161.0014857243859</TD>
+    <TD>-59.87430170401285</TD>
+    <TD>7.9657545</TD>
+    <TD>8.111559</TD>
+    <TD>7.6458836</TD>
+    <TD>1054.6863</TD>
+    <TD>952.72375</TD>
+    <TD>0.37104899787091067</TD>
+    <TD>0.021226661</TD>
+    <TD>6469.048</TD>
+    <TD>6466.431</TD>
+    <TD>6477.5947</TD>
+    <TD>1.6956</TD>
+    <TD>1.6933</TD>
+    <TD>1.6984</TD>
+    <TD>56.0673</TD>
+    <TD>55.8944</TD>
+    <TD>56.2095</TD>
+    <TD>NaN</TD>
+    <TD>NaN</TD>
+    <TD>NaN</TD>
+    <TD>4939.358771077198</TD>
+    <TD>4939.358771077198</TD>
+    <TD>T</TD>
+    <TD>F</TD>
+    <TD>0</TD>
+  </TR>
+  <TR>
     <TD>2199161386015469312</TD>
     <TD>330.51902664934903</TD>
     <TD>58.00035221519391</TD>
@@ -255,35 +321,6 @@ JOIN gaiadr3.astrophysical_parameters AS ap ON gs.source_id=ap.source_id</DESCRI
     <TD>0</TD>
   </TR>
   <TR>
-    <TD>3131336896034833536</TD>
-    <TD>98.04361930227822</TD>
-    <TD>4.966600373349905</TD>
-    <TD>8.158022</TD>
-    <TD>8.221572</TD>
-    <TD>7.968983</TD>
-    <TD>852.5685</TD>
-    <TD>2362.393</TD>
-    <TD>0.7087430929769448</TD>
-    <TD>0.11477819</TD>
-    <TD>22665.771</TD>
-    <TD>22498.166</TD>
-    <TD>22856.852</TD>
-    <TD>3.8055</TD>
-    <TD>3.7661</TD>
-    <TD>3.8608</TD>
-    <TD>6.4536</TD>
-    <TD>5.9738</TD>
-    <TD>6.8287</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>9862.248743837674</TD>
-    <TD>9862.248743837674</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
     <TD>2901155648586891648</TD>
     <TD>86.4995797980886</TD>
     <TD>-32.306532522642556</TD>
@@ -308,35 +345,6 @@ JOIN gaiadr3.astrophysical_parameters AS ap ON gs.source_id=ap.source_id</DESCRI
     <TD>NaN</TD>
     <TD>40789.08004157461</TD>
     <TD>40789.08004157461</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
-    <TD>2163949388695291136</TD>
-    <TD>314.95652722895505</TD>
-    <TD>47.520952441379954</TD>
-    <TD>4.549879</TD>
-    <TD>4.6039977</TD>
-    <TD>4.4984283</TD>
-    <TD>289.95114</TD>
-    <TD>85.55369</TD>
-    <TD>1.4681098952118063</TD>
-    <TD>0.36795396</TD>
-    <TD>41342.062</TD>
-    <TD>41204.574</TD>
-    <TD>41455.332</TD>
-    <TD>4.0511</TD>
-    <TD>4.0286</TD>
-    <TD>4.0731</TD>
-    <TD>8.6314</TD>
-    <TD>8.2719</TD>
-    <TD>8.9804</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>195263.42571856463</TD>
-    <TD>195263.42571856463</TD>
     <TD>F</TD>
     <TD>F</TD>
     <TD>0</TD>
@@ -516,64 +524,6 @@ JOIN gaiadr3.astrophysical_parameters AS ap ON gs.source_id=ap.source_id</DESCRI
     <TD>0</TD>
   </TR>
   <TR>
-    <TD>6244010505608714368</TD>
-    <TD>241.70172217693315</TD>
-    <TD>-20.669293247493943</TD>
-    <TD>3.9183657</TD>
-    <TD>3.8711839</TD>
-    <TD>3.8967657</TD>
-    <TD>498.60724</TD>
-    <TD>557.9087</TD>
-    <TD>7.095567842703005</TD>
-    <TD>0.27299878</TD>
-    <TD>18076.186</TD>
-    <TD>17904.457</TD>
-    <TD>18229.795</TD>
-    <TD>3.573</TD>
-    <TD>3.5308</TD>
-    <TD>3.6052</TD>
-    <TD>7.4908</TD>
-    <TD>7.1288</TD>
-    <TD>8.0126</TD>
-    <TD>3207.5825</TD>
-    <TD>2968.8523</TD>
-    <TD>3450.9048</TD>
-    <TD>5374.937329117965</TD>
-    <TD>3207.58251953125</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
-    <TD>357046923445910784</TD>
-    <TD>27.31460023432785</TD>
-    <TD>47.89690393973139</TD>
-    <TD>6.458228</TD>
-    <TD>6.376686</TD>
-    <TD>6.185414</TD>
-    <TD>42.107784</TD>
-    <TD>49.860394</TD>
-    <TD>7.286315397110932</TD>
-    <TD>0.122776754</TD>
-    <TD>10406.551</TD>
-    <TD>10362.062</TD>
-    <TD>10465.3545</TD>
-    <TD>3.882</TD>
-    <TD>3.8703</TD>
-    <TD>3.891</TD>
-    <TD>2.748</TD>
-    <TD>2.7168</TD>
-    <TD>2.7936</TD>
-    <TD>75.69523</TD>
-    <TD>73.09207</TD>
-    <TD>78.294655</TD>
-    <TD>79.46035636338728</TD>
-    <TD>75.69522857666016</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
     <TD>1001751471970061184</TD>
     <TD>101.55871798601483</TD>
     <TD>59.441631642786994</TD>
@@ -627,35 +577,6 @@ JOIN gaiadr3.astrophysical_parameters AS ap ON gs.source_id=ap.source_id</DESCRI
     <TD>686.7046</TD>
     <TD>776.4010963267942</TD>
     <TD>660.0672607421875</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
-    <TD>1835335977682835200</TD>
-    <TD>303.81626848477487</TD>
-    <TD>25.591937769362993</TD>
-    <TD>4.7666535</TD>
-    <TD>4.6534615</TD>
-    <TD>4.8878264</TD>
-    <TD>767.4025</TD>
-    <TD>284.42697</TD>
-    <TD>5.6917833760419505</TD>
-    <TD>0.23187764</TD>
-    <TD>14821.178</TD>
-    <TD>14775.358</TD>
-    <TD>14911.13</TD>
-    <TD>3.5338</TD>
-    <TD>3.4979</TD>
-    <TD>3.5926</TD>
-    <TD>6.8657</TD>
-    <TD>6.3356</TD>
-    <TD>7.2243</TD>
-    <TD>827.20325</TD>
-    <TD>768.1015</TD>
-    <TD>896.7359</TD>
-    <TD>2040.7524546813436</TD>
-    <TD>827.2032470703125</TD>
     <TD>F</TD>
     <TD>F</TD>
     <TD>0</TD>
@@ -772,35 +693,6 @@ JOIN gaiadr3.astrophysical_parameters AS ap ON gs.source_id=ap.source_id</DESCRI
     <TD>261.55646</TD>
     <TD>254.47079267891155</TD>
     <TD>257.208740234375</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
-    <TD>3231122695855309952</TD>
-    <TD>69.30696557991749</TD>
-    <TD>0.9982991124154754</TD>
-    <TD>5.3123617</TD>
-    <TD>5.232534</TD>
-    <TD>5.3852353</TD>
-    <TD>1275.7194</TD>
-    <TD>735.6296</TD>
-    <TD>7.030017485323366</TD>
-    <TD>0.33000687</TD>
-    <TD>13370.092</TD>
-    <TD>13139.762</TD>
-    <TD>13452.966</TD>
-    <TD>3.6105</TD>
-    <TD>3.5937</TD>
-    <TD>3.6554</TD>
-    <TD>5.1971</TD>
-    <TD>4.9655</TD>
-    <TD>5.2909</TD>
-    <TD>294.3092</TD>
-    <TD>268.77258</TD>
-    <TD>323.58643</TD>
-    <TD>774.3718911225601</TD>
-    <TD>294.3092041015625</TD>
     <TD>F</TD>
     <TD>F</TD>
     <TD>0</TD>
@@ -951,35 +843,6 @@ JOIN gaiadr3.astrophysical_parameters AS ap ON gs.source_id=ap.source_id</DESCRI
     <TD>0</TD>
   </TR>
   <TR>
-    <TD>5043493547808390272</TD>
-    <TD>22.400835365386072</TD>
-    <TD>-21.629317729827</TD>
-    <TD>5.107683</TD>
-    <TD>5.1046033</TD>
-    <TD>5.052133</TD>
-    <TD>1293.9899</TD>
-    <TD>644.2931</TD>
-    <TD>13.896509932713386</TD>
-    <TD>0.1319681</TD>
-    <TD>9015.413</TD>
-    <TD>8993.228</TD>
-    <TD>9037.399</TD>
-    <TD>3.7938</TD>
-    <TD>3.776</TD>
-    <TD>3.8041</TD>
-    <TD>2.8724</TD>
-    <TD>2.8416</TD>
-    <TD>2.9355</TD>
-    <TD>41.62399</TD>
-    <TD>40.860493</TD>
-    <TD>42.417614</TD>
-    <TD>48.901504781295934</TD>
-    <TD>41.62398910522461</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
     <TD>2967287596507432704</TD>
     <TD>85.84038633601946</TD>
     <TD>-18.55753511737535</TD>
@@ -1125,35 +988,6 @@ JOIN gaiadr3.astrophysical_parameters AS ap ON gs.source_id=ap.source_id</DESCRI
     <TD>0</TD>
   </TR>
   <TR>
-    <TD>1528274712539730048</TD>
-    <TD>192.3883727405005</TD>
-    <TD>42.052773979842094</TD>
-    <TD>8.53407</TD>
-    <TD>8.621937</TD>
-    <TD>8.338043</TD>
-    <TD>3563.448</TD>
-    <TD>4697.5737</TD>
-    <TD>2.8506786209392554</TD>
-    <TD>0.11531791</TD>
-    <TD>7604.833</TD>
-    <TD>7601.899</TD>
-    <TD>7607.8228</TD>
-    <TD>3.5437</TD>
-    <TD>3.5352</TD>
-    <TD>3.5541</TD>
-    <TD>3.5442</TD>
-    <TD>3.5037</TD>
-    <TD>3.5794</TD>
-    <TD>35.7704</TD>
-    <TD>33.230156</TD>
-    <TD>38.677444</TD>
-    <TD>37.69510925759744</TD>
-    <TD>35.77040100097656</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
     <TD>431857797682112640</TD>
     <TD>3.4006096497618685</TD>
     <TD>63.9833805210558</TD>
@@ -1212,35 +1046,6 @@ JOIN gaiadr3.astrophysical_parameters AS ap ON gs.source_id=ap.source_id</DESCRI
     <TD>0</TD>
   </TR>
   <TR>
-    <TD>511366816383887616</TD>
-    <TD>27.49733030582619</TD>
-    <TD>62.15100225208586</TD>
-    <TD>7.876073</TD>
-    <TD>8.32245</TD>
-    <TD>7.1830764</TD>
-    <TD>1651.8322</TD>
-    <TD>2074.9502</TD>
-    <TD>3.9840954679897966</TD>
-    <TD>0.21921037</TD>
-    <TD>5069.297</TD>
-    <TD>4966.9414</TD>
-    <TD>5088.4434</TD>
-    <TD>2.4336</TD>
-    <TD>2.1077</TD>
-    <TD>2.5189</TD>
-    <TD>9.2244</TD>
-    <TD>8.3584</TD>
-    <TD>13.2662</TD>
-    <TD>44.888363</TD>
-    <TD>40.566742</TD>
-    <TD>49.794136</TD>
-    <TD>50.414674348288855</TD>
-    <TD>44.888362884521484</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
     <TD>2074539817555034112</TD>
     <TD>302.74279831033766</TD>
     <TD>41.352736780116864</TD>
@@ -1328,180 +1133,6 @@ JOIN gaiadr3.astrophysical_parameters AS ap ON gs.source_id=ap.source_id</DESCRI
     <TD>0</TD>
   </TR>
   <TR>
-    <TD>5530670107652889344</TD>
-    <TD>117.30952843989927</TD>
-    <TD>-46.373170156596245</TD>
-    <TD>4.0345917</TD>
-    <TD>3.9406838</TD>
-    <TD>4.209676</TD>
-    <TD>520.31433</TD>
-    <TD>706.7904</TD>
-    <TD>3.506475329336614</TD>
-    <TD>0.41420224</TD>
-    <TD>19981.0</TD>
-    <TD>19932.203</TD>
-    <TD>19995.967</TD>
-    <TD>2.7787</TD>
-    <TD>2.7745</TD>
-    <TD>2.7805</TD>
-    <TD>30.303</TD>
-    <TD>30.2447</TD>
-    <TD>30.4543</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>131319.72555158747</TD>
-    <TD>131319.72555158747</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
-    <TD>4462172954111816064</TD>
-    <TD>249.24249682799214</TD>
-    <TD>14.47526712583385</TD>
-    <TD>6.990211</TD>
-    <TD>6.882502</TD>
-    <TD>7.1495395</TD>
-    <TD>1204.0677</TD>
-    <TD>1090.6533</TD>
-    <TD>0.5473347308177162</TD>
-    <TD>0.063585944</TD>
-    <TD>19942.383</TD>
-    <TD>19871.303</TD>
-    <TD>19984.73</TD>
-    <TD>2.6131</TD>
-    <TD>2.6062</TD>
-    <TD>2.621</TD>
-    <TD>41.9854</TD>
-    <TD>41.6115</TD>
-    <TD>42.3197</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>250146.63138499449</TD>
-    <TD>250146.63138499449</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
-    <TD>2663898150461060992</TD>
-    <TD>348.50217340141376</TD>
-    <TD>4.997047216503516</TD>
-    <TD>7.016142</TD>
-    <TD>6.925841</TD>
-    <TD>7.1347632</TD>
-    <TD>780.609</TD>
-    <TD>519.6037</TD>
-    <TD>0.43781686056044206</TD>
-    <TD>0.06020847</TD>
-    <TD>19979.025</TD>
-    <TD>19942.207</TD>
-    <TD>19995.22</TD>
-    <TD>2.6529</TD>
-    <TD>2.6466</TD>
-    <TD>2.6604</TD>
-    <TD>39.505</TD>
-    <TD>39.0687</TD>
-    <TD>39.8699</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>223095.70067199782</TD>
-    <TD>223095.70067199782</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
-    <TD>4067435566661212672</TD>
-    <TD>268.7251833355937</TD>
-    <TD>-24.887105504191073</TD>
-    <TD>6.1151557</TD>
-    <TD>6.123718</TD>
-    <TD>6.0201316</TD>
-    <TD>465.4047</TD>
-    <TD>605.0474</TD>
-    <TD>1.0375940172318545</TD>
-    <TD>0.11866246</TD>
-    <TD>27722.656</TD>
-    <TD>27027.928</TD>
-    <TD>29590.078</TD>
-    <TD>3.566</TD>
-    <TD>3.5281</TD>
-    <TD>3.7703</TD>
-    <TD>10.6411</TD>
-    <TD>8.3826</TD>
-    <TD>11.5357</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>60007.0466737142</TD>
-    <TD>60007.0466737142</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
-    <TD>3017190546641718144</TD>
-    <TD>83.85826322361507</TD>
-    <TD>-5.909896048091421</TD>
-    <TD>2.7408419</TD>
-    <TD>3.0577648</TD>
-    <TD>2.9466283</TD>
-    <TD>28.741545</TD>
-    <TD>141.99849</TD>
-    <TD>1.9968658285610956</TD>
-    <TD>0.7299109</TD>
-    <TD>35000.023</TD>
-    <TD>34989.88</TD>
-    <TD>35009.94</TD>
-    <TD>3.8374</TD>
-    <TD>3.8319</TD>
-    <TD>3.8502</TD>
-    <TD>10.2321</TD>
-    <TD>10.0067</TD>
-    <TD>10.3246</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>140958.9652016056</TD>
-    <TD>140958.9652016056</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
-    <TD>3337991583943473280</TD>
-    <TD>83.78449673650563</TD>
-    <TD>9.934150110721673</TD>
-    <TD>3.528103</TD>
-    <TD>3.4947097</TD>
-    <TD>3.6371272</TD>
-    <TD>78.63741</TD>
-    <TD>564.51746</TD>
-    <TD>2.5935737953210762</TD>
-    <TD>0.4032116</TD>
-    <TD>33118.273</TD>
-    <TD>30534.098</TD>
-    <TD>34027.56</TD>
-    <TD>3.8336</TD>
-    <TD>3.7487</TD>
-    <TD>4.0197</TD>
-    <TD>9.6577</TD>
-    <TD>6.4796</TD>
-    <TD>11.081</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>100671.83482981216</TD>
-    <TD>100671.83482981216</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
     <TD>2074539817555034112</TD>
     <TD>302.74279831033766</TD>
     <TD>41.352736780116864</TD>
@@ -1584,296 +1215,6 @@ JOIN gaiadr3.astrophysical_parameters AS ap ON gs.source_id=ap.source_id</DESCRI
     <TD>NaN</TD>
     <TD>3239.2310739511977</TD>
     <TD>3239.2310739511977</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
-    <TD>5530670107652889344</TD>
-    <TD>117.30952843989927</TD>
-    <TD>-46.373170156596245</TD>
-    <TD>4.0345917</TD>
-    <TD>3.9406838</TD>
-    <TD>4.209676</TD>
-    <TD>520.31433</TD>
-    <TD>706.7904</TD>
-    <TD>3.506475329336614</TD>
-    <TD>0.41420224</TD>
-    <TD>19981.0</TD>
-    <TD>19932.203</TD>
-    <TD>19995.967</TD>
-    <TD>2.7787</TD>
-    <TD>2.7745</TD>
-    <TD>2.7805</TD>
-    <TD>30.303</TD>
-    <TD>30.2447</TD>
-    <TD>30.4543</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>131319.72555158747</TD>
-    <TD>131319.72555158747</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
-    <TD>4462172954111816064</TD>
-    <TD>249.24249682799214</TD>
-    <TD>14.47526712583385</TD>
-    <TD>6.990211</TD>
-    <TD>6.882502</TD>
-    <TD>7.1495395</TD>
-    <TD>1204.0677</TD>
-    <TD>1090.6533</TD>
-    <TD>0.5473347308177162</TD>
-    <TD>0.063585944</TD>
-    <TD>19942.383</TD>
-    <TD>19871.303</TD>
-    <TD>19984.73</TD>
-    <TD>2.6131</TD>
-    <TD>2.6062</TD>
-    <TD>2.621</TD>
-    <TD>41.9854</TD>
-    <TD>41.6115</TD>
-    <TD>42.3197</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>250146.63138499449</TD>
-    <TD>250146.63138499449</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
-    <TD>2663898150461060992</TD>
-    <TD>348.50217340141376</TD>
-    <TD>4.997047216503516</TD>
-    <TD>7.016142</TD>
-    <TD>6.925841</TD>
-    <TD>7.1347632</TD>
-    <TD>780.609</TD>
-    <TD>519.6037</TD>
-    <TD>0.43781686056044206</TD>
-    <TD>0.06020847</TD>
-    <TD>19979.025</TD>
-    <TD>19942.207</TD>
-    <TD>19995.22</TD>
-    <TD>2.6529</TD>
-    <TD>2.6466</TD>
-    <TD>2.6604</TD>
-    <TD>39.505</TD>
-    <TD>39.0687</TD>
-    <TD>39.8699</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>223095.70067199782</TD>
-    <TD>223095.70067199782</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
-    <TD>4067435566661212672</TD>
-    <TD>268.7251833355937</TD>
-    <TD>-24.887105504191073</TD>
-    <TD>6.1151557</TD>
-    <TD>6.123718</TD>
-    <TD>6.0201316</TD>
-    <TD>465.4047</TD>
-    <TD>605.0474</TD>
-    <TD>1.0375940172318545</TD>
-    <TD>0.11866246</TD>
-    <TD>27722.656</TD>
-    <TD>27027.928</TD>
-    <TD>29590.078</TD>
-    <TD>3.566</TD>
-    <TD>3.5281</TD>
-    <TD>3.7703</TD>
-    <TD>10.6411</TD>
-    <TD>8.3826</TD>
-    <TD>11.5357</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>60007.0466737142</TD>
-    <TD>60007.0466737142</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
-    <TD>3017190546641718144</TD>
-    <TD>83.85826322361507</TD>
-    <TD>-5.909896048091421</TD>
-    <TD>2.7408419</TD>
-    <TD>3.0577648</TD>
-    <TD>2.9466283</TD>
-    <TD>28.741545</TD>
-    <TD>141.99849</TD>
-    <TD>1.9968658285610956</TD>
-    <TD>0.7299109</TD>
-    <TD>35000.023</TD>
-    <TD>34989.88</TD>
-    <TD>35009.94</TD>
-    <TD>3.8374</TD>
-    <TD>3.8319</TD>
-    <TD>3.8502</TD>
-    <TD>10.2321</TD>
-    <TD>10.0067</TD>
-    <TD>10.3246</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>140958.9652016056</TD>
-    <TD>140958.9652016056</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
-    <TD>3337991583943473280</TD>
-    <TD>83.78449673650563</TD>
-    <TD>9.934150110721673</TD>
-    <TD>3.528103</TD>
-    <TD>3.4947097</TD>
-    <TD>3.6371272</TD>
-    <TD>78.63741</TD>
-    <TD>564.51746</TD>
-    <TD>2.5935737953210762</TD>
-    <TD>0.4032116</TD>
-    <TD>33118.273</TD>
-    <TD>30534.098</TD>
-    <TD>34027.56</TD>
-    <TD>3.8336</TD>
-    <TD>3.7487</TD>
-    <TD>4.0197</TD>
-    <TD>9.6577</TD>
-    <TD>6.4796</TD>
-    <TD>11.081</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>100671.83482981216</TD>
-    <TD>100671.83482981216</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
-    <TD>3017190546641718144</TD>
-    <TD>83.85826322361507</TD>
-    <TD>-5.909896048091421</TD>
-    <TD>2.7408419</TD>
-    <TD>3.0577648</TD>
-    <TD>2.9466283</TD>
-    <TD>28.741545</TD>
-    <TD>141.99849</TD>
-    <TD>1.9968658285610956</TD>
-    <TD>0.7299109</TD>
-    <TD>35000.023</TD>
-    <TD>34989.88</TD>
-    <TD>35009.94</TD>
-    <TD>3.8374</TD>
-    <TD>3.8319</TD>
-    <TD>3.8502</TD>
-    <TD>10.2321</TD>
-    <TD>10.0067</TD>
-    <TD>10.3246</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>140958.9652016056</TD>
-    <TD>140958.9652016056</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
-    <TD>3337991583943473280</TD>
-    <TD>83.78449673650563</TD>
-    <TD>9.934150110721673</TD>
-    <TD>3.528103</TD>
-    <TD>3.4947097</TD>
-    <TD>3.6371272</TD>
-    <TD>78.63741</TD>
-    <TD>564.51746</TD>
-    <TD>2.5935737953210762</TD>
-    <TD>0.4032116</TD>
-    <TD>33118.273</TD>
-    <TD>30534.098</TD>
-    <TD>34027.56</TD>
-    <TD>3.8336</TD>
-    <TD>3.7487</TD>
-    <TD>4.0197</TD>
-    <TD>9.6577</TD>
-    <TD>6.4796</TD>
-    <TD>11.081</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>100671.83482981216</TD>
-    <TD>100671.83482981216</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
-    <TD>3017190546641718144</TD>
-    <TD>83.85826322361507</TD>
-    <TD>-5.909896048091421</TD>
-    <TD>2.7408419</TD>
-    <TD>3.0577648</TD>
-    <TD>2.9466283</TD>
-    <TD>28.741545</TD>
-    <TD>141.99849</TD>
-    <TD>1.9968658285610956</TD>
-    <TD>0.7299109</TD>
-    <TD>35000.023</TD>
-    <TD>34989.88</TD>
-    <TD>35009.94</TD>
-    <TD>3.8374</TD>
-    <TD>3.8319</TD>
-    <TD>3.8502</TD>
-    <TD>10.2321</TD>
-    <TD>10.0067</TD>
-    <TD>10.3246</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>140958.9652016056</TD>
-    <TD>140958.9652016056</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
-    <TD>3337991583943473280</TD>
-    <TD>83.78449673650563</TD>
-    <TD>9.934150110721673</TD>
-    <TD>3.528103</TD>
-    <TD>3.4947097</TD>
-    <TD>3.6371272</TD>
-    <TD>78.63741</TD>
-    <TD>564.51746</TD>
-    <TD>2.5935737953210762</TD>
-    <TD>0.4032116</TD>
-    <TD>33118.273</TD>
-    <TD>30534.098</TD>
-    <TD>34027.56</TD>
-    <TD>3.8336</TD>
-    <TD>3.7487</TD>
-    <TD>4.0197</TD>
-    <TD>9.6577</TD>
-    <TD>6.4796</TD>
-    <TD>11.081</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>100671.83482981216</TD>
-    <TD>100671.83482981216</TD>
     <TD>F</TD>
     <TD>F</TD>
     <TD>0</TD>
@@ -1937,93 +1278,6 @@ JOIN gaiadr3.astrophysical_parameters AS ap ON gs.source_id=ap.source_id</DESCRI
     <TD>0</TD>
   </TR>
   <TR>
-    <TD>5305373440633087360</TD>
-    <TD>143.61095283696628</TD>
-    <TD>-59.2297266018616</TD>
-    <TD>4.0521374</TD>
-    <TD>4.0475554</TD>
-    <TD>3.9590352</TD>
-    <TD>707.08453</TD>
-    <TD>284.15</TD>
-    <TD>1.7232712450125363</TD>
-    <TD>0.15366985</TD>
-    <TD>7899.9785</TD>
-    <TD>7899.944</TD>
-    <TD>7899.9917</TD>
-    <TD>2.2923</TD>
-    <TD>2.2921</TD>
-    <TD>2.2928</TD>
-    <TD>24.1259</TD>
-    <TD>24.1231</TD>
-    <TD>24.1281</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>2034.04495524888</TD>
-    <TD>2034.04495524888</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
-    <TD>2005298141506983680</TD>
-    <TD>330.9221905284165</TD>
-    <TD>53.2125136994749</TD>
-    <TD>8.299543</TD>
-    <TD>8.49137</TD>
-    <TD>7.9158964</TD>
-    <TD>633.54114</TD>
-    <TD>642.4178</TD>
-    <TD>0.2016736037393368</TD>
-    <TD>0.07580186</TD>
-    <TD>18839.95</TD>
-    <TD>18837.281</TD>
-    <TD>18845.928</TD>
-    <TD>3.1878</TD>
-    <TD>3.1837</TD>
-    <TD>3.1924</TD>
-    <TD>14.1066</TD>
-    <TD>14.0278</TD>
-    <TD>14.176</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>22493.31438306906</TD>
-    <TD>22493.31438306906</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
-    <TD>5305373440633087360</TD>
-    <TD>143.61095283696628</TD>
-    <TD>-59.2297266018616</TD>
-    <TD>4.0521374</TD>
-    <TD>4.0475554</TD>
-    <TD>3.9590352</TD>
-    <TD>707.08453</TD>
-    <TD>284.15</TD>
-    <TD>1.7232712450125363</TD>
-    <TD>0.15366985</TD>
-    <TD>7899.9785</TD>
-    <TD>7899.944</TD>
-    <TD>7899.9917</TD>
-    <TD>2.2923</TD>
-    <TD>2.2921</TD>
-    <TD>2.2928</TD>
-    <TD>24.1259</TD>
-    <TD>24.1231</TD>
-    <TD>24.1281</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>2034.04495524888</TD>
-    <TD>2034.04495524888</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
     <TD>460887893954085632</TD>
     <TD>41.85103085161756</TD>
     <TD>57.67710339847038</TD>
@@ -2077,64 +1331,6 @@ JOIN gaiadr3.astrophysical_parameters AS ap ON gs.source_id=ap.source_id</DESCRI
     <TD>NaN</TD>
     <TD>4083.5374050382216</TD>
     <TD>4083.5374050382216</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
-    <TD>4685330658719979136</TD>
-    <TD>7.244883816875155</TD>
-    <TD>-74.77139411972968</TD>
-    <TD>9.739134</TD>
-    <TD>9.738243</TD>
-    <TD>9.717517</TD>
-    <TD>2235.9055</TD>
-    <TD>3865.6604</TD>
-    <TD>1.3256000571650783</TD>
-    <TD>0.037724845</TD>
-    <TD>10164.093</TD>
-    <TD>9947.5625</TD>
-    <TD>10256.309</TD>
-    <TD>3.6696</TD>
-    <TD>3.6481</TD>
-    <TD>3.6797</TD>
-    <TD>3.8982</TD>
-    <TD>3.852</TD>
-    <TD>3.9949</TD>
-    <TD>87.03961</TD>
-    <TD>81.06214</TD>
-    <TD>92.68357</TD>
-    <TD>145.50991059700812</TD>
-    <TD>87.03961181640625</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
-    <TD>2166846047768767488</TD>
-    <TD>313.95750211059317</TD>
-    <TD>47.41763849332711</TD>
-    <TD>5.531616</TD>
-    <TD>5.803691</TD>
-    <TD>5.065173</TD>
-    <TD>241.41376</TD>
-    <TD>232.0426</TD>
-    <TD>0.3915125977927643</TD>
-    <TD>0.040135734</TD>
-    <TD>15024.623</TD>
-    <TD>15004.626</TD>
-    <TD>15100.765</TD>
-    <TD>2.2109</TD>
-    <TD>2.2029</TD>
-    <TD>2.2235</TD>
-    <TD>56.7545</TD>
-    <TD>55.6762</TD>
-    <TD>57.5151</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>147266.78763675253</TD>
-    <TD>147266.78763675253</TD>
     <TD>F</TD>
     <TD>F</TD>
     <TD>0</TD>
@@ -2285,35 +1481,6 @@ JOIN gaiadr3.astrophysical_parameters AS ap ON gs.source_id=ap.source_id</DESCRI
     <TD>0</TD>
   </TR>
   <TR>
-    <TD>6705977119250947712</TD>
-    <TD>271.65772381444384</TD>
-    <TD>-50.09152286889015</TD>
-    <TD>3.643981</TD>
-    <TD>3.614084</TD>
-    <TD>3.6740875</TD>
-    <TD>87.6064</TD>
-    <TD>326.2373</TD>
-    <TD>2.946986528235679</TD>
-    <TD>0.29602778</TD>
-    <TD>21340.709</TD>
-    <TD>21121.752</TD>
-    <TD>21530.545</TD>
-    <TD>3.3041</TD>
-    <TD>3.2818</TD>
-    <TD>3.3308</TD>
-    <TD>13.2264</TD>
-    <TD>12.6509</TD>
-    <TD>13.6585</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>32554.314455926975</TD>
-    <TD>32554.314455926975</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
     <TD>463932269854231168</TD>
     <TD>41.0282302549732</TD>
     <TD>58.32626871854462</TD>
@@ -2367,93 +1534,6 @@ JOIN gaiadr3.astrophysical_parameters AS ap ON gs.source_id=ap.source_id</DESCRI
     <TD>NaN</TD>
     <TD>115621.5483017349</TD>
     <TD>115621.5483017349</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
-    <TD>4093968702062993664</TD>
-    <TD>273.8037832649009</TD>
-    <TD>-20.72827600390888</TD>
-    <TD>5.279456</TD>
-    <TD>5.284643</TD>
-    <TD>5.185267</TD>
-    <TD>447.88293</TD>
-    <TD>242.54874</TD>
-    <TD>0.8769077486837962</TD>
-    <TD>0.16677898</TD>
-    <TD>25209.965</TD>
-    <TD>24541.611</TD>
-    <TD>25800.168</TD>
-    <TD>3.5993</TD>
-    <TD>3.5613</TD>
-    <TD>3.7718</TD>
-    <TD>9.1868</TD>
-    <TD>7.2452</TD>
-    <TD>9.8133</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>30584.9189432393</TD>
-    <TD>30584.9189432393</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
-    <TD>6724588312070306304</TD>
-    <TD>274.6673519998983</TD>
-    <TD>-42.28841575662185</TD>
-    <TD>6.255798</TD>
-    <TD>6.1716537</TD>
-    <TD>6.36771</TD>
-    <TD>564.07733</TD>
-    <TD>653.86365</TD>
-    <TD>0.580796612488224</TD>
-    <TD>0.066146046</TD>
-    <TD>19974.484</TD>
-    <TD>19936.756</TD>
-    <TD>19993.729</TD>
-    <TD>2.6163</TD>
-    <TD>2.6082</TD>
-    <TD>2.6214</TD>
-    <TD>42.4998</TD>
-    <TD>42.2497</TD>
-    <TD>42.9101</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>257968.07606954552</TD>
-    <TD>257968.07606954552</TD>
-    <TD>F</TD>
-    <TD>F</TD>
-    <TD>0</TD>
-  </TR>
-  <TR>
-    <TD>6761395047932767104</TD>
-    <TD>281.7328808327332</TD>
-    <TD>-29.959984058874753</TD>
-    <TD>9.704363</TD>
-    <TD>9.636002</TD>
-    <TD>9.79323</TD>
-    <TD>159.74127</TD>
-    <TD>177.39171</TD>
-    <TD>0.24780980691518917</TD>
-    <TD>0.044379406</TD>
-    <TD>22835.982</TD>
-    <TD>22619.084</TD>
-    <TD>23110.59</TD>
-    <TD>3.7574</TD>
-    <TD>3.7328</TD>
-    <TD>3.7838</TD>
-    <TD>6.579</TD>
-    <TD>6.3558</TD>
-    <TD>6.8056</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>NaN</TD>
-    <TD>10560.595843674004</TD>
-    <TD>10560.595843674004</TD>
     <TD>F</TD>
     <TD>F</TD>
     <TD>0</TD>
@@ -2519,5 +1599,17 @@ JOIN gaiadr3.astrophysical_parameters AS ap ON gs.source_id=ap.source_id</DESCRI
 </TABLEDATA>
 </DATA>
 </TABLE>
+<RESOURCE type="meta" utype="adhoc:service" name="ancillary">
+  <DESCRIPTION>Retrieve DataLink file containing ancillary data for source</DESCRIPTION>
+  <PARAM name="accessURL" datatype="char" arraysize="*" value="https://gea.esac.esa.int/data-server/datalink/links"/>
+  <PARAM name="standardID" datatype="char" arraysize="*" value="ivo://ivoa.net/std/DataLink#links-1.0"/>
+  <PARAM name="contentType" datatype="char" arraysize="*" value="application/x-votable+xml;content=datalink"/>
+  <GROUP name="inputParams">
+    <PARAM datatype="long" name="ID" ref="SOURCE_ID" value="">
+    </PARAM>
+    <PARAM arraysize="*" datatype="char" name="RELEASE" value="Gaia DR3">
+    </PARAM>
+  </GROUP>
+</RESOURCE>
 </RESOURCE>
 </VOTABLE>
