@@ -5,7 +5,7 @@ This plot makes a Hertzsprung-Russell diagram that shows the main luminosity cla
 Most data from this plot comes from the [ESA Gaia mission](https://sci.esa.int/web/gaia). The majority of stars plotted here come from three samples:
 
 - One selecting Gaia stars within 8pc
-- One selecting a random 2.5% of the Gaia stars with parallax<10(G-5). Where ESA Gaia does not quote a luminosity, we use a luminosity calculated from the estimated radius and temperature of the star.
+- One selecting a random 2.5% of the Gaia stars with parallax<10(G-5).
 - A subsample of stars from the [Pickles (1998)](https://ui.adsabs.harvard.edu/abs/1998PASP..110..863P/abstract) spectral library. This was added to include a wider range of spectra types
 - White dwarfs within 12pc from [Vincent et al. (2024)](https://ui.adsabs.harvard.edu/abs/2024A%26A...682A...5V/abstract). 
 - A selection of named stars selected by hand to add named stars across the different temperatures and luminosity classes
