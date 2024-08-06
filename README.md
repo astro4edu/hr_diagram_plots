@@ -1,5 +1,23 @@
 ## What this repository does	
-Most data from this plot comes from the [ESA Gaia mission][https://sci.esa.int/web/gaia]. The majority of stars plotted here come from three samples, one selecting Gaia stars within 8pc, one selecting 2.5% of the Gaia stars with parallax<10(G-5). Where ESA Gaia does not quote a luminosity, we use a luminosity calculated from the estimated radius and temperature of the star. For named stars the luminosity, temperature and radius estimates are taken from the literature. See the named stars table in the data folder for references. To include a wide range of spectra types we use Gaia data for some stars in the [Pickles (1998)][https://ui.adsabs.harvard.edu/abs/1998PASP..110..863P/abstract] spectral library. Our white dwarfs and their luminosities come from [Vincent et al. (2024)][https://ui.adsabs.harvard.edu/abs/2024A%26A...682A...5V/abstract]. In all cases we The colours are generated using the relationships in [Harre & Heller (2021)][https://onlinelibrary.wiley.com/doi/10.1002/asna.202113868]. For most objects we use the T_eff + log g grid (table 2 in Harre & Heller), for stars hotter than 10,000K we use the temperature/spectral type relationship (table 5) and white dwarfs we use the effective temperature relationship for blackbodies (table 1). I all cases the selected stars had parallaxes ten times greater than their parallax uncertainties, were not flagged as non-single stars and had Renormalised Unit Weight Error (RUWE) less than 1.4 as recommended by [Lindegren et al. (2018)][https://www.cosmos.esa.int/documents/29201/1770596/Lindegren_GaiaDR2_Astrometry_extended.pdf/1ebddb25-f010-6437-cb14-0e360e2d9f09]
+
+
+## Where does the data come from?
+Most data from this plot comes from the [ESA Gaia mission][https://sci.esa.int/web/gaia]. The majority of stars plotted here come from three samples:
+
+- One selecting Gaia stars within 8pc
+- One selecting 2.5% of the Gaia stars with parallax<10(G-5). Where ESA Gaia does not quote a luminosity, we use a luminosity calculated from the estimated radius and temperature of the star.
+- A subsample of stars from the Pickles (1998)][https://ui.adsabs.harvard.edu/abs/1998PASP..110..863P/abstract] spectral library. This was added to include a wider range of spectra types
+- White dwarfs within 12pc from [Vincent et al. (2024)][https://ui.adsabs.harvard.edu/abs/2024A%26A...682A...5V/abstract]. 
+- A selection of named stars selected by hand to add named stars across the different temperatures and luminosity classes
+For named stars the luminosity, temperature and radius estimates are taken from the literature. See the named stars table in the data folder for references.  Our
+These samples were chosen to provide objects across the HR diagram and do not provide a representative sample of stars in the Galaxy.
+-
+In the first three samples the selected stars had parallaxes ten times greater than their parallax uncertainties, had Gaia G magnitudes brighter than 18, were not flagged as non-single stars and had Renormalised Unit Weight Error (RUWE) less than 1.4 as recommended by [Lindegren et al. (2018)][https://www.cosmos.esa.int/documents/29201/1770596/Lindegren_GaiaDR2_Astrometry_extended.pdf/1ebddb25-f010-6437-cb14-0e360e2d9f09]. 
+
+In the first three samples the selected stars 
+For the white dwarfs the temperatures, 
+
+The colours for our objects are generated using the relationships in [Harre & Heller (2021)][https://onlinelibrary.wiley.com/doi/10.1002/asna.202113868]. For most objects we use the T_eff + log g grid (table 2 in Harre & Heller), for stars hotter than 10,000K we use the temperature/spectral type relationship (table 5) and white dwarfs we use the effective temperature relationship for blackbodies (table 1).
 ## How to create plots using this repository
 The command to run code from this repository is:
 `python3 hr_diagram_plot.py`
