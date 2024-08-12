@@ -29,7 +29,6 @@
     "ms_text": "Main Sequence",
     "sbg_text": "Subgiants",
     "g_text": "Giants",
-    "bg_text": "Bright Giants",
     "spg_text": "Supergiants",
     "bd_text": "Brown Dwarfs",
     "filename": "hr_diagram"
@@ -99,7 +98,6 @@
     "ms_text": "Main Sequence",
     "sbg_text": "Subgiants",
     "g_text": "Giants",
-    "bg_text": "Bright Giants",
     "spg_text": "Supergiants",
     "bd_text": "Brown Dwarfs",
     "filename": "hr_diagram"
