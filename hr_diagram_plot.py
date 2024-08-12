@@ -245,10 +245,10 @@ plt.xticks([50000.0,30000.0,10000.0,5000.0,3000.0,2000.0],[50000,30000,10000,500
 
 #add the labels for luminosity classes
 plt.text(10000.0,0.0003,text_list['wd_text'],rotation=-20,ha='center',va='center')
-plt.text(7000.0,0.8,text_list['ms_text'],rotation=-35,ha='center',va='center')
-plt.text(5000.0,3,text_list['sbg_text'],rotation=-35,ha='center',va='center')
-plt.text(5300.0,80,text_list['g_text'],rotation=-15,ha='right',va='center')
-plt.text(5300.0,5500,split_text_in_middle(text_list['bg_text']),rotation=0,ha='left',va='center')
+plt.text(7000.0,0.7,text_list['ms_text'],rotation=-35,ha='center',va='center')
+plt.text(5000.0,4,text_list['sbg_text'],rotation=-35,ha='center',va='center')
+plt.text(5300.0,100,text_list['g_text'],rotation=-15,ha='right',va='center')
+#plt.text(5300.0,3000,text_list['bg_text'],rotation=0,ha='left',va='center')
 plt.text(6000.0,100000,text_list['spg_text'],rotation=0,ha='center',va='center')
 plt.text(2010.0,0.000035,split_text_in_middle(text_list['bd_text']),rotation=0,ha='right',va='center')
 handles=[]
@@ -268,5 +268,5 @@ else:
 leg=plt.legend(handles,legends,loc="lower left", title=rad_legend,fontsize=6,title_fontsize=8,labelspacing=1.5)
 plt.setp(leg.get_title(), multialignment='center')
 filename_tmp=text_list['filename']
-print('Saving to: '+str(outfile_base.joinpath(filename_tmp+'.'+str.lower(args.output_format))))
-plt.savefig(str(outfile_base.joinpath(filename_tmp+'.'+str.lower(args.output_format))))
+print('Saving to: '+str(outfile_base.joinpath(filename_tmp+'_'+str.lower(language_code)+'.'+str.lower(args.output_format))))
+plt.savefig(str(outfile_base.joinpath(filename_tmp+'_'+str.lower(language_code)+'.'+str.lower(args.output_format))))
