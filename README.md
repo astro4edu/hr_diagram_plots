@@ -47,6 +47,8 @@ Please credit all plots created by this code to IAU OAE/Niall Deacon. For langua
 ## Translation credits
 ### French
 Olivier Bonneton
+### Simplified Chinese
+Lin Shijie
 ### Traditional Chinese
 Lin Shijie
 
