@@ -3,7 +3,7 @@
  xmlns="http://www.ivoa.net/xml/VOTable/v1.3">
 <!--
  !  VOTable written by STIL version 4.2 (uk.ac.starlink.votable.VOTableWriter)
- !  at 2024-08-02T19:51:33
+ !  at 2024-08-22T09:29:32
  !-->
 <RESOURCE>
 <TABLE name="/Users/deacon/Documents/GitHub/hr_diagrams/data/named_stars.csv" nrows="14">
@@ -45,7 +45,7 @@
     <TD>1.0</TD>
     <TD>4.437750562820388</TD>
     <TD>https://nssdc.gsfc.nasa.gov/planetary/factsheet/sunfact.html</TD>
-    <TD>1.02</TD>
+    <TD>1.04</TD>
   </TR>
   <TR>
     <TD>Alshain</TD>
@@ -60,7 +60,7 @@
     <TD>1.4989999532699585</TD>
     <TD>3.525</TD>
     <TD>2010MNRAS.405.1907B,</TD>
-    <TD>0.98</TD>
+    <TD>0.95</TD>
   </TR>
   <TR>
     <TD>Procyon B</TD>

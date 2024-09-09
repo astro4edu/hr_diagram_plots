@@ -132,10 +132,12 @@ else:
 text_list=translations_dicts[language_code]
 possible_fonts=text_list['possible_fonts']
 
+text_vertical_factor=1.0
 #important that arabic reshaper comes before bidi get_display
 if language_code.startswith('ar'):
     text_list = {key:(arabic_reshaper.reshape(value) if type(value)==str else value) for key, value in text_list.items()}
-
+elif language_code.startswith('kr') or language_code.startswith('jp') or language_code.startswith('zh'):
+    text_vertical_factor=0.9 #this is added as CJK fonts seemed to make the luminosity class labels a bit too high in position
 
 text_list = {key:(get_display(value) if type(value)==str else value) for key, value in text_list.items()}
 
@@ -154,6 +156,7 @@ from matplotlib.patches import CirclePolygon,Circle
 from matplotlib.collections import PolyCollection,RegularPolyCollection
 
 text_list_en=translations_dicts['en']
+font_loader(possible_fonts)
 
 
 
@@ -244,13 +247,13 @@ plt.title(text_list['title_text'])
 plt.xticks([50000.0,30000.0,10000.0,5000.0,3000.0,2000.0],[50000,30000,10000,5000,3000,2000])
 
 #add the labels for luminosity classes
-plt.text(10000.0,0.0003,text_list['wd_text'],rotation=-20,ha='center',va='center')
-plt.text(7000.0,0.7,text_list['ms_text'],rotation=-35,ha='center',va='center')
-plt.text(5000.0,4,text_list['sbg_text'],rotation=-35,ha='center',va='center')
-plt.text(5300.0,100,text_list['g_text'],rotation=-15,ha='right',va='center')
-#plt.text(5300.0,3000,text_list['bg_text'],rotation=0,ha='left',va='center')
-plt.text(6000.0,100000,text_list['spg_text'],rotation=0,ha='center',va='center')
-plt.text(2010.0,0.000035,split_text_in_middle(text_list['bd_text']),rotation=0,ha='right',va='center')
+plt.text(10000.0,text_vertical_factor*0.0003,text_list['wd_text'],rotation=-20,ha='center',va='center')
+plt.text(7000.0,text_vertical_factor*0.7,text_list['ms_text'],rotation=-35,ha='center',va='center')
+plt.text(5000.0,text_vertical_factor*4,text_list['sbg_text'],rotation=-35,ha='center',va='center')
+plt.text(5300.0,text_vertical_factor*100,text_list['g_text'],rotation=-15,ha='right',va='center')
+#plt.text(5300.0,text_vertical_factor*3000,text_list['bg_text'],rotation=0,ha='left',va='center')
+plt.text(6000.0,text_vertical_factor*100000,text_list['spg_text'],rotation=0,ha='center',va='center')
+plt.text(2010.0,text_vertical_factor*0.000035,split_text_in_middle(text_list['bd_text']),rotation=0,ha='right',va='center')
 handles=[]
 legends=[]
 for i0 in range(0,6):
