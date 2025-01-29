@@ -49,6 +49,8 @@ Please credit all plots created by this code to IAU OAE/Niall Deacon. For langua
 Samantha Brown-Sevilla
 ### French
 Olivier Bonneton
+### Italian
+Giuliana Giobbi
 ### Simplified Chinese
 Lin Shijie
 ### Traditional Chinese
