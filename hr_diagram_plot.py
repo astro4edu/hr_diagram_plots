@@ -134,7 +134,7 @@ possible_fonts=text_list['possible_fonts']
 
 text_vertical_factor=1.0
 #important that arabic reshaper comes before bidi get_display
-if language_code.startswith('ar'):
+if language_code.startswith('ar') or language_code in ['ar','az','bal','fa','ks','ku','prs','ps','ug','ur']:
     text_list = {key:(arabic_reshaper.reshape(value) if type(value)==str else value) for key, value in text_list.items()}
 elif language_code.startswith('kr') or language_code.startswith('jp') or language_code.startswith('zh'):
     text_vertical_factor=0.9 #this is added as CJK fonts seemed to make the luminosity class labels a bit too high in position
