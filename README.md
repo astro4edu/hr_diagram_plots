@@ -51,6 +51,8 @@ Samantha Brown-Sevilla
 Olivier Bonneton
 ### Italian
 Giuliana Giobbi
+### Nepali
+Manisha Dwa
 ### Simplified Chinese
 Lin Shijie
 ### Traditional Chinese
