@@ -234,9 +234,12 @@ for  row in named_stars_data:
         va_tmp='top'
     """
     text_tmp=text_list[slugify(row['english_name']+'-name')]
+    print(text_tmp)
     if len(text_tmp)>12:
-        index_tmp=row['english_name'].rfind(' ')
+        index_tmp=text_list[slugify(row['english_name']+'-name')].rfind(' ')
         text_tmp=text_tmp[:index_tmp]+'\n'+text_tmp[index_tmp+1:]
+    
+    print(text_tmp)
     plt.text(row['text_offset_x']*row['literature_effective_temperature'],row['literature_luminosity'],text_tmp,ha=ha_tmp,va='center',fontsize=6)
     
 plt.xlabel(text_list['xaxis_text'])
